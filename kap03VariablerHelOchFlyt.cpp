@@ -178,7 +178,7 @@ void provaLitteraler()
     cout << 7/10.0*500 << endl;
     cout << 3/4 + 3/4 + 3/4<<  endl;
     cout << 3.0/4 + 3/4 <<endl;
-    cout <<
+
 }
 void ingangTillKap03VariablerHelOchFlyt()
 {
@@ -188,7 +188,8 @@ void ingangTillKap03VariablerHelOchFlyt()
     //beraknaBokkostnad();
     //provaFlytttal();
     //undersokFlyttalstyper();
-    //provaHeltal();
-    //skrivUtVaxel(947);
+    provaHeltal();
+    skrivUtVaxel(947);
+    //milf
 }
 
