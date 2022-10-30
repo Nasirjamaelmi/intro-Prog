@@ -188,8 +188,8 @@ void ingangTillKap03VariablerHelOchFlyt()
     //beraknaBokkostnad();
     //provaFlytttal();
     //undersokFlyttalstyper();
-    provaHeltal();
-    skrivUtVaxel(947);
-    //milf
+    //provaHeltal();
+    //skrivUtVaxel(947);
+
 }
 
