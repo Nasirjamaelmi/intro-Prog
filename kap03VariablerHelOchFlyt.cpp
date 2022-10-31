@@ -49,8 +49,8 @@ void beraknaBokkostnad()
     double totaltAntalTimmar = ((antalSidor*procentAttLäsa) * minuterPerSida/60);
     double kostnadPerTimme = bokPris/totaltAntalTimmar;
     sleep_for(milliseconds(2000));
-    cout <<"Du beräknas äga boken ca "<< setprecision(3)<<totaltAntalTimmar<< " timmar" << endl;
-    cout <<"Boken beräknas därför kosta dig :"<<setprecision(3)<<kostnadPerTimme<<" kr/timme" <<endl;
+    cout <<"Du beräknas äga boken ca " << setprecision(3) << totaltAntalTimmar << " timmar" << endl;
+    cout <<"Boken beräknas därför kosta dig :"  <<setprecision(3) <<kostnadPerTimme<< " kr/timme" <<endl;
 
 
 }
@@ -178,10 +178,86 @@ void provaLitteraler()
     cout << 7/10.0*500 << endl;
     cout << 3/4 + 3/4 + 3/4<<  endl;
     cout << 3.0/4 + 3/4 <<endl;
+    cout << -58/10 <<endl;
 
 }
+
+void provaHexUtskrift()
+{
+    cout << "Prova hex-utskrift" <<endl;
+    int x = 256+10;
+
+    cout << "1)" <<x <<endl;
+    cout << "2)" <<hex << x <<endl;
+    cout << "3)" <<x <<endl;
+    cout << "4)" <<setw(8) <<x<<endl;
+    cout << "5)" <<setw(8) << setfill('0') << x << endl;
+    cout << "6)" <<"x=" << x << ", x=" << x << endl << endl;
+    cout << dec << setfill(' ');
+
+}
+
+void provaRest()
+{
+    cout << "Provar restberäkningar." << endl;
+    cout << 13 % 10 << endl; //3
+    cout << 57 % 10 << endl; //7
+    cout << 39 % 20 << endl; //19
+    cout << -57 % 10 << endl;//-7
+    cout << endl;
+}
+
+void provaHexLitteraler()
+{
+    cout <<"Provar hexlitteraler." <<endl;
+    unsigned int x = 0xa7;
+    cout <<"x = " << x << endl;
+
+    // Hur stor plats tar en int?
+    int antalByte = sizeof(unsigned int);
+    int antalHex = 2*antalByte;
+    int antalBit = 8*antalByte;
+    cout << "En (unsinged int upptar " << antalByte
+    << "bytes (dvs " << antalHex << "hex-siffror, eller "
+    << antalBit << "bit)" << endl;
+
+}
+
+void provaBitvisLogik()
+{
+    cout <<"Prova bitvis logik" << endl;
+
+    unsigned int x = 0x123456;
+
+    unsigned int mask = 0xF0;
+
+    int antalSiffror = 2*sizeof(int);
+    cout << hex << setfill(' ');
+
+    cout << "1)" << setw(antalSiffror) << x <<endl;
+    cout << "2)" << setw(antalSiffror) << mask <<endl;
+    cout << "3)" << setw(antalSiffror) << ~mask <<endl;
+    cout << "4)" << setw(antalSiffror) << (x | mask) <<endl;
+    cout << "5)" << setw(antalSiffror) << (x & ~mask) <<endl;
+    cout << "6)" << setw(antalSiffror) << (x ^ mask) <<endl;
+
+    cout << endl;
+    cout << dec << setfill(' ');
+
+}
+
+void testaSkiftOperator()
+{
+    cout << (7 << 2) << endl;
+    cout << (73 << 22) << endl;
+    cout << (1 << 1) << endl;
+    cout << (4 << 4) << endl;
+    cout<< "Flyttar 4 till 8 sen 16 sen 32 och sist 64"<<endl;
+}
+
 void ingangTillKap03VariablerHelOchFlyt()
 {
+
     cout <<"kap03 Variabler Hel Och Flyt" << endl;
     //provaTilldelning();
     //provaInlasningOchUtskrift();
@@ -190,6 +266,14 @@ void ingangTillKap03VariablerHelOchFlyt()
     //undersokFlyttalstyper();
     //provaHeltal();
     //skrivUtVaxel(947);
+    //provaLitteraler();
+    //provaHexUtskrift();
+    //provaRest();
+    //provaHexLitteraler();
+    //provaBitvisLogik();
+    //testaSkiftOperator();
+
+
 
 }
 
