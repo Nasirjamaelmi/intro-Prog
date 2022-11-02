@@ -6,6 +6,7 @@ CONFIG -= qt
 SOURCES += \
         kap02FunkOchCppfiler.cpp \
         kap03VariablerHelOchFlyt.cpp \
+        kap04IfsatserOchBooleskaVariabler.cpp \
         main.cpp
 
 HEADERS += \

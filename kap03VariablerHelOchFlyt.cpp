@@ -255,6 +255,74 @@ void testaSkiftOperator()
     cout<< "Flyttar 4 till 8 sen 16 sen 32 och sist 64"<<endl;
 }
 
+unsigned int xMedEttstalldBit(unsigned int x, int bitnummer)
+{
+  unsigned int bit1 = 1 << bitnummer;
+  unsigned int resultat = x | bit1;
+  return resultat;
+}
+
+unsigned int xMedNollstalldBit(unsigned int x, int bitnummer)
+{
+    unsigned int bit0 = 1 << bitnummer;
+    unsigned int resultat = x & ~bit0;
+    return resultat;
+}
+
+unsigned int farginfoFranRGBO(unsigned int r, unsigned int g, unsigned int b, unsigned int opacity)
+{
+
+
+
+}
+unsigned int blaFranFarginfo(unsigned int farginfo)
+{
+    unsigned int högerskiftad = farginfo >> 8;
+    unsigned int blå = högerskiftad & 0xff;
+    return blå;
+}
+unsigned int gronFranFarginfo(unsigned int farginfo)
+{
+    unsigned int högerskiftad = farginfo >> 16;
+    unsigned int grön = högerskiftad & 0xff;
+    return grön;
+}
+unsigned int rodFranFarginfo(unsigned int farginfo)
+{
+    unsigned int högerskiftad = farginfo >> 24;
+    unsigned int röd = högerskiftad & 0xff;
+    return röd;
+}
+unsigned int opacityFranFarginfo(unsigned int farginfo)
+{
+    unsigned int högerskiftad = farginfo << 8;
+    unsigned int opacity = högerskiftad & 0xff;
+    return opacity;
+}
+void testaFargFunktionerna(){
+cout << "testar färgfunktionerna." << endl;
+unsigned int farg = farginfoFranRGBO(10,20,30,40);
+cout << farg <<endl;
+/*cout << rodFranFarginfo( farg ) << endl;
+cout << gronFranFarginfo( farg ) << endl;
+cout << blaFranFarginfo( farg ) << endl;
+cout << opacityFranFarginfo( farg ) << endl;
+*/cout << endl;
+}
+
+void testaBitFunktionerna(){
+cout << "testar bitfunktionerna." << endl;
+cout << "Bör bli 1: " << xMedEttstalldBit(0, 0) << endl;
+cout << "Bör bli 2: " << xMedEttstalldBit(0, 1) << endl;
+cout << "Bör bli 4: " << xMedEttstalldBit(0, 2) << endl;
+cout << "Bör bli 1024: " << xMedEttstalldBit(0, 10) << endl;
+cout << "Bör bli 1025: " << xMedEttstalldBit(1024, 0) << endl;
+cout << "Bör bli 1025: " << xMedEttstalldBit(1025, 0) << endl;
+cout << "Bör bli 1: " << xMedNollstalldBit(1025, 10) << endl;
+cout << "Bör bli 1: " << xMedNollstalldBit(1, 10) << endl;
+cout << endl;
+}
+
 void ingangTillKap03VariablerHelOchFlyt()
 {
 
@@ -272,8 +340,8 @@ void ingangTillKap03VariablerHelOchFlyt()
     //provaHexLitteraler();
     //provaBitvisLogik();
     //testaSkiftOperator();
-
-
+    //testaBitFunktionerna();
+    testaFargFunktionerna();
 
 }
 
