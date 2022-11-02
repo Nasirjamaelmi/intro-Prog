@@ -269,11 +269,22 @@ unsigned int xMedNollstalldBit(unsigned int x, int bitnummer)
     return resultat;
 }
 
+void testaBitFunktionerna(){
+cout << "testar bitfunktionerna." << endl;
+cout << "Bör bli 1: " << xMedEttstalldBit(0, 0) << endl;
+cout << "Bör bli 2: " << xMedEttstalldBit(0, 1) << endl;
+cout << "Bör bli 4: " << xMedEttstalldBit(0, 2) << endl;
+cout << "Bör bli 1024: " << xMedEttstalldBit(0, 10) << endl;
+cout << "Bör bli 1025: " << xMedEttstalldBit(1024, 0) << endl;
+cout << "Bör bli 1025: " << xMedEttstalldBit(1025, 0) << endl;
+cout << "Bör bli 1: " << xMedNollstalldBit(1025, 10) << endl;
+cout << "Bör bli 1: " << xMedNollstalldBit(1, 10) << endl;
+cout << endl;
+}
+
 unsigned int farginfoFranRGBO(unsigned int r, unsigned int g, unsigned int b, unsigned int opacity)
 {
-
-
-
+    return r;
 }
 unsigned int blaFranFarginfo(unsigned int farginfo)
 {
@@ -310,18 +321,6 @@ cout << opacityFranFarginfo( farg ) << endl;
 */cout << endl;
 }
 
-void testaBitFunktionerna(){
-cout << "testar bitfunktionerna." << endl;
-cout << "Bör bli 1: " << xMedEttstalldBit(0, 0) << endl;
-cout << "Bör bli 2: " << xMedEttstalldBit(0, 1) << endl;
-cout << "Bör bli 4: " << xMedEttstalldBit(0, 2) << endl;
-cout << "Bör bli 1024: " << xMedEttstalldBit(0, 10) << endl;
-cout << "Bör bli 1025: " << xMedEttstalldBit(1024, 0) << endl;
-cout << "Bör bli 1025: " << xMedEttstalldBit(1025, 0) << endl;
-cout << "Bör bli 1: " << xMedNollstalldBit(1025, 10) << endl;
-cout << "Bör bli 1: " << xMedNollstalldBit(1, 10) << endl;
-cout << endl;
-}
 
 void ingangTillKap03VariablerHelOchFlyt()
 {

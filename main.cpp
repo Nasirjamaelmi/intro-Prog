@@ -12,8 +12,8 @@ void ingangTillKap04OchBooleskaVariabler();
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
-    ingangTillKap03VariablerHelOchFlyt();
-    //ingangTillKap04OchBooleskaVariabler();
+    //ingangTillKap03VariablerHelOchFlyt();
+    ingangTillKap04OchBooleskaVariabler();
 
 
 }
