@@ -10,13 +10,16 @@ void ingangTillKap03VariablerHelOchFlyt();
 void ingangTillKap04OchBooleskaVariabler();
 
 void ingangtillkap5Kylskapsloppar();
+
+void ingangtillkap5Gissatal();
+
+void ingangTillKap05RitaMedText();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
-
-
-    ingangtillkap5Kylskapsloppar();
-
+    //ingangtillkap5Gissatal();
+     ingangTillKap05RitaMedText();
 
 }
 
