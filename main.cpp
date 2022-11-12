@@ -9,11 +9,13 @@ void ingangTillKap03VariablerHelOchFlyt();
 
 void ingangTillKap04OchBooleskaVariabler();
 
+void ingangtillkap5Kylskapsloppar();
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
-    //ingangTillKap03VariablerHelOchFlyt();
-    ingangTillKap04OchBooleskaVariabler();
+
+
+    ingangtillkap5Kylskapsloppar();
 
 
 }
