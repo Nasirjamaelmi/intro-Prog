@@ -75,21 +75,23 @@ void fyllcirkel(int radie)
 {
 
     cout<< "fylld cirkel" << endl;
-    for (int i = 0; i <= radie; ++i)
+
+    int radie2= radie * radie;
+    for (int i = -radie; i <= radie; ++i)
     {
-
-        for(int x = 0; x <= radie; x++ )
+        for(int x = -radie; x <= radie; x++ )
         {
-
-
-
-            cout<<"#";
-
+            if((i*i+x*x) < radie2)
+            {
+                cout<<"#";
+            }
+            else
+            {
+                cout<<" ";
+            }
 
         }
-
         cout <<endl;
-
     }
 
 }
@@ -97,11 +99,11 @@ void ingangTillKap05RitaMedText()
 {
     cout <<"ingång till rita med text" << endl;
     cout << endl;
-    //skrivMultiplikationsmatris();
-    //fyllRektangel(4,20);
-    //cout<< endl;
-    //ritaRektangel(4,20);
-    //fyllTriangel(5);
+    skrivMultiplikationsmatris();
+    fyllRektangel(4,20);
+    cout<< endl;
+    ritaRektangel(4,20);
+    fyllTriangel(5);
     cout<<endl;
     fyllcirkel(5);
     cout<<endl;

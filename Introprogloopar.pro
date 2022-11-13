@@ -8,6 +8,7 @@ SOURCES += \
         kap02FunkOchCppfiler.cpp \
         kap03VariablerHelOchFlyt.cpp \
         kap04IfsatserOchBooleskaVariabler.cpp \
+        kap05Collatz.cpp \
         kap05Kylskapsloopar.cpp \
         kap05RitaMedText.cpp \
         main.cpp

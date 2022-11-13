@@ -15,11 +15,12 @@ void ingangtillkap5Gissatal();
 
 void ingangTillKap05RitaMedText();
 
+void ingangTillKap05Collatz();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
-    //ingangtillkap5Gissatal();
-     ingangTillKap05RitaMedText();
+    ingangTillKap05Collatz();
 
 }
 
