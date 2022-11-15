@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 
 using namespace std;
 
@@ -17,10 +17,17 @@ void ingangTillKap05RitaMedText();
 
 void ingangTillKap05Collatz();
 
+void ingangTillKap05Matteberakningar();
+
+void ingangTillKap6ArrayFunktioner();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
-    ingangTillKap05Collatz();
+   // ingangTillKap05Collatz();
+   //ingangTillKap03VariablerHelOchFlyt();
+   // ingangTillKap05Matteberakningar();
+   ingangTillKap6ArrayFunktioner();
 
 }
 

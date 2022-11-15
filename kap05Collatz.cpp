@@ -31,7 +31,7 @@ void skrivCollatzSekvens(long int n)
 
 long int collatzMax(long int n)
 {
-  int holder = n;
+  int holder = 0;
     while(true)
     {
         if(n % 2 == 0)
@@ -112,6 +112,7 @@ void nagraTestanrop()
     skrivCollatzStatistik(10000);
     cout << endl;
 }
+
 void ingangTillKap05Collatz()
 {
     cout << "Ingang till Kap05 Collatz." << endl;

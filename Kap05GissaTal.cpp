@@ -15,6 +15,7 @@ int nyttTal(int n)
     srand(time(0));
     return rand() % n;
 }
+
 int anvandarensGissning()
 {
     int tal = 0;

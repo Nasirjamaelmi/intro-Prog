@@ -10,7 +10,9 @@ SOURCES += \
         kap04IfsatserOchBooleskaVariabler.cpp \
         kap05Collatz.cpp \
         kap05Kylskapsloopar.cpp \
+        kap05Matteberakningar.cpp \
         kap05RitaMedText.cpp \
+        kap06Arrayfunktioner.cpp \
         main.cpp
 
 HEADERS += \

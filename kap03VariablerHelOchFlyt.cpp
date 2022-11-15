@@ -256,23 +256,24 @@ void testaSkiftOperator()
 }
 
 unsigned int xMedEttstalldBit(unsigned int x, int bitnummer)
-{
-  unsigned int bit1 = 1 << bitnummer;
-  unsigned int resultat = x | bit1;
-  return resultat;
+    {
+      unsigned int bit1 = 1 << bitnummer;
+      unsigned int resultat = x | bit1;
+      return resultat;
 }
 
 unsigned int xMedNollstalldBit(unsigned int x, int bitnummer)
 {
     unsigned int bit0 = 1 << bitnummer;
     unsigned int resultat = x & ~bit0;
+
     return resultat;
 }
 
 void testaBitFunktionerna(){
 cout << "testar bitfunktionerna." << endl;
 cout << "Bör bli 1: " << xMedEttstalldBit(0, 0) << endl;
-cout << "Bör bli 2: " << xMedEttstalldBit(0, 1) << endl;
+cout << "Bör bli 2: " << xMedEttstalldBit(0, 0) << endl;
 cout << "Bör bli 4: " << xMedEttstalldBit(0, 2) << endl;
 cout << "Bör bli 1024: " << xMedEttstalldBit(0, 10) << endl;
 cout << "Bör bli 1025: " << xMedEttstalldBit(1024, 0) << endl;
@@ -339,8 +340,8 @@ void ingangTillKap03VariablerHelOchFlyt()
     //provaHexLitteraler();
     //provaBitvisLogik();
     //testaSkiftOperator();
-    //testaBitFunktionerna();
-    testaFargFunktionerna();
+    testaBitFunktionerna();
+    //testaFargFunktionerna();
 
 }
 

@@ -57,10 +57,6 @@ void kylskapMedwhileVilkor()
 
 }
 
-
-
-
-
 void ingangtillkap5Kylskapsloppar()
 {
    kylskapMedWhileTrue();
