@@ -26,37 +26,92 @@ void fyllMedVarde(int arr[], int antal, int varde)
 
 void fyllMedSlumptal(int arr[], int antal, int minsta, int storsta)
 {
-
+   for (int i= 0; i<antal; i++)
+   {
+       arr[i]= (rand() % (storsta + 1 - minsta)) + minsta;
+   }
 }
 
-int minst(const int arr[], int antal){
-// TODO
-     return 0;
+int minst(const int arr[], int antal)
+{
+     int minstatalet = arr[0];
+     for(int i=0; i < antal; i++)
+     {
+        if(arr[i] < minstatalet)
+        {
+            minstatalet = arr[i];
+        }
+     }
+     return minstatalet;
 }
 
-int storst(const int arr[], int antal){
-// TODO
-     return 0;
+int storst(const int arr[], int antal)
+{
+    int storstatalet = 0;
+    for(int i=0; i <antal; i++)
+    {
+        if(arr[i] > storstatalet)
+        {
+            storstatalet = arr[i];
+        }
+    }
+    return storstatalet;
 }
 
-int indexTillMinsta(const int arr[], int antal){
-// TODO
-     return 0;
+int indexTillMinsta(const int arr[], int antal)
+{
+    int minstatalet = arr[0];
+    int plats = 0;
+    for(int i=0; i <antal; i++)
+    {
+       if(arr[i] < minstatalet)
+       {
+           minstatalet = arr[i];
+           plats = i;
+       }
+    }
+    return plats;
 }
 
 int indexTillStorsta(const int arr[], int antal)
 {
-    return 0;
+    int storstatalet = arr[0];
+    int plats = 0;
+    for(int i=0; i <antal; i++)
+    {
+        if(arr[i] > storstatalet)
+        {
+            storstatalet = arr[i];
+            plats = i;
+
+        }
+    }
+    return plats;
 }
 
-bool arSorterad(const int arr[], int antal){
-// TODO
-    return true;
+bool arSorterad(const int arr[], int antal)
+{
+   for (int i=0; i <antal-1; i++)
+   {
+        if(arr[i] > arr[i+1])
+        {
+            return false;
+        }
+   }
+   return true;
 }
 
-bool innehaller(const int arr[], int antal, int x){
-// TODO
-    return true;
+bool innehaller(const int arr[], int antal, int x)
+{
+
+    for (int i=0; i <= antal-1; i++)
+    {
+         if(arr[i] == x)
+         {
+             return true;
+         }
+    }
+    return false;
 }
 
 void provaArrayFunktionerna()
@@ -66,7 +121,7 @@ void provaArrayFunktionerna()
     int arr[storlek];
     fyllMedVarde(arr, storlek, 5);
     skrivUtArr(arr, storlek);
-   /* arr[0] -= 1;
+    arr[0] -= 1;
     arr[storlek-1] += 1;
     if (arSorterad(arr, storlek))
     cout << "Arrayen är sorterad" << endl;
@@ -80,6 +135,7 @@ void provaArrayFunktionerna()
     arr[storlek-1] = 3; // Detta blir det största värdet
     int m = minst(arr, storlek);
     int s = storst(arr, storlek);
+    skrivUtArr(arr,storlek);
     cout << "minst=" << m << " störst=" << s << endl;
     if (m != -3 || s != 3)
     cout << "BUG m eller s !!!!!!!!!!!" << endl;
@@ -89,8 +145,9 @@ void provaArrayFunktionerna()
     cout << "BUG i indexTillStörsta !!!!!!!!!!!" << endl;
     if (!innehaller(arr,storlek, 3))
     cout << "BUG!!!!!!!!!!!" << endl;
-*/
+
 }
+
 void ingangTillKap6ArrayFunktioner()
 {
     provaArrayFunktionerna();
