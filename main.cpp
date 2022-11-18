@@ -23,15 +23,12 @@ void ingangTillKap6ArrayFunktioner();
 
 void ingangTillKap6Vaxelpengar();
 
+void ingangTillYatzi();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
-   // ingangTillKap05Collatz();
-   //ingangTillKap03VariablerHelOchFlyt();
-   // ingangTillKap05Matteberakningar();
-   //ingangTillKap6ArrayFunktioner();
-
-    ingangTillKap6Vaxelpengar();
+    ingangTillYatzi();
 
 }
 

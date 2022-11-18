@@ -167,8 +167,6 @@ void skrivUtVaxel(int antalKronor)
     cout << antal1 << "  x 1"<<endl;
 
 
-
-
 }
 
 void provaLitteraler()

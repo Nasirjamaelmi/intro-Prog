@@ -14,6 +14,7 @@ SOURCES += \
         kap05RitaMedText.cpp \
         kap06Arrayfunktioner.cpp \
         kap06Vaxelpengar.cpp \
+        kap06Yatzi.cpp \
         main.cpp
 
 HEADERS += \
