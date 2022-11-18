@@ -25,10 +25,15 @@ void ingangTillKap6Vaxelpengar();
 
 void ingangTillYatzi();
 
+void ingangTillSortera();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
-    ingangTillYatzi();
+
+
+
+    ingangTillSortera();
 
 }
 

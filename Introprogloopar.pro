@@ -13,6 +13,7 @@ SOURCES += \
         kap05Matteberakningar.cpp \
         kap05RitaMedText.cpp \
         kap06Arrayfunktioner.cpp \
+        kap06Sortering.cpp \
         kap06Vaxelpengar.cpp \
         kap06Yatzi.cpp \
         main.cpp
