@@ -277,6 +277,10 @@ void testaYatzyvarden()
     cout << "testen lyckades" << endl;
     else cout << "testen MISSLYCKADES" << endl;
 }
+
+
+
+
 void ingangTillYatzi()
 {
     testaYatzyvarden();

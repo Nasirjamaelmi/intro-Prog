@@ -28,6 +28,7 @@ bool ungefarLika(double a, double b)
     double epsilon = 0.001;
     double diff = a-b;
     return (diff < epsilon) && (diff > (-epsilon));
+
 }
 
 void testaUngefarLika()

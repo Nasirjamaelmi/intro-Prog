@@ -1,6 +1,24 @@
 #include <iostream>
 #include <stdlib.h>
+#include <vector>
+
 using namespace std;
+
+void forsokAndraVarden(int a, int arr[], int antalVarden)
+{
+    a = 42;
+
+    for (int i=0; i<antalVarden; ++i)
+        arr[i] = 42;
+}
+
+void anropaForsokAndraVarden()
+{
+    int a = 0;
+    int arr[2]{0,0};
+    forsokAndraVarden(a, arr, 2);
+    cout << "a=" << a << ", arr[]=" << arr[0] << "," << arr[1] << endl;
+}
 
 void skrivUtArr(const int arr[], int antal)
 {
@@ -148,7 +166,59 @@ void provaArrayFunktionerna()
 
 }
 
+void fyllMedPrimtal(int arr[], int antal)
+{
+    arr[0] = 2;
+    for (int ix=1; ix<antal ; ++ix)
+    {
+        int forgoendePrimtal = arr[ix-1];
+        for(int kandidat = forgoendePrimtal +1; true ; ++kandidat)
+        {
+
+            for(int i=0; i <ix; ++i)
+            {
+                bool hittatEnDelare = false;
+                if((kandidat % arr[i]) == 0)
+                {
+                    hittatEnDelare = true;
+                    break;
+                }
+                if (hittatEnDelare == false)
+                    arr[ix] = kandidat;
+            }
+
+        }
+
+    }
+}
+
+void provaFyllMedPrimtal()
+{
+    const int antalTal = 50;
+    int talen[antalTal];
+    fyllMedPrimtal( talen, antalTal );
+    skrivUtArr(talen, antalTal);
+    cout << endl;
+}
+
+void forsokAndraVektornsVarden(int a, vector<int> vek)
+{
+    a = 42;
+    for (int i=0; i<vek.size(); ++i)
+        vek[i] = 42;
+}
+
+void anropaForsokAndraVektornsVarden()
+{
+    int a = 0;
+    vector<int> vek{0,0};
+    forsokAndraVektornsVarden(a, vek);
+    cout << "a=" << a << ", vek[]=" << vek[0] << "," << vek[1] << endl;
+}
 void ingangTillKap6ArrayFunktioner()
 {
-    provaArrayFunktionerna();
+    //provaArrayFunktionerna();
+   //provaFyllMedPrimtal();
+    anropaForsokAndraVarden();
+
 }

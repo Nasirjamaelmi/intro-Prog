@@ -5,6 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         Kap05GissaTal.cpp \
+        Kap07Sju.cpp \
         kap02FunkOchCppfiler.cpp \
         kap03VariablerHelOchFlyt.cpp \
         kap04IfsatserOchBooleskaVariabler.cpp \

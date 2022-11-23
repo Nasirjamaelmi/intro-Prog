@@ -27,13 +27,18 @@ void ingangTillYatzi();
 
 void ingangTillSortera();
 
+void ingangTillsju();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
 
+    //ingangTillSortera();
+   // ingangTillKap6ArrayFunktioner();
+    ingangTillsju();
 
 
-    ingangTillSortera();
+
 
 }
 
