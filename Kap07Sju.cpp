@@ -4,7 +4,7 @@
 using namespace std;
 
 
-
+double MOMSFAKTOR = 1.25;
 
 void testarMinaKunskaper()
 {
@@ -29,8 +29,12 @@ void automattestaUngefarLika()
     assert( !ungefarLika(3,2));
 }
 
+
 void ingangTillsju()
 {
    // testarMinaKunskaper();
-    automattestaUngefarLika();
+   //automattestaUngefarLika();
+
+
+
 }

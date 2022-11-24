@@ -17,8 +17,11 @@ SOURCES += \
         kap06Sortering.cpp \
         kap06Vaxelpengar.cpp \
         kap06Yatzi.cpp \
+        kap06lottoexperiment.cpp \
+        kap08char.cpp \
         main.cpp
 
 HEADERS += \
     Kap02FunkOchCppfiler.h \
-    introprogloppar.h
+    introprogloppar.h \
+    minamattefunktioner.h
