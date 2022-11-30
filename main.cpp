@@ -33,12 +33,19 @@ void ingangTillsju();
 
 void ingangTillKap8();
 
+void ingangTillKap08CStrangar();
+
+void ingangTillKap08String();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
 
     //ingangTillKap06Lottoexperiment();
-    ingangTillKap8();
+    //ingangTillKap8();
+    //ingangTillKap08CStrangar();
+    ingangTillKap08String();
+
 
 
 

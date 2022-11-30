@@ -18,6 +18,8 @@ SOURCES += \
         kap06Vaxelpengar.cpp \
         kap06Yatzi.cpp \
         kap06lottoexperiment.cpp \
+        kap08CStrang.cpp \
+        kap08String.cpp \
         kap08char.cpp \
         main.cpp
 

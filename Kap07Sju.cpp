@@ -33,7 +33,7 @@ void automattestaUngefarLika()
 void ingangTillsju()
 {
    // testarMinaKunskaper();
-   //automattestaUngefarLika();
+   // automattestaUngefarLika();
 
 
 
