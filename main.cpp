@@ -37,6 +37,16 @@ void ingangTillKap08CStrangar();
 
 void ingangTillKap08String();
 
+void ingangTillKap09ExperimentMedCin();
+
+void ingangTillKap09Uppmaningar();
+
+void ingangTillKap09Kommandotolk();
+
+void ingangTillSkrivaFil();
+
+void ingangTillLasafil();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
@@ -44,11 +54,12 @@ int main()
     //ingangTillKap06Lottoexperiment();
     //ingangTillKap8();
     //ingangTillKap08CStrangar();
-    ingangTillKap08String();
-
-
-
-
+    //ingangTillKap08String();
+    //ingangTillKap09ExperimentMedCin();
+    //ingangTillKap09Uppmaningar();
+    //ingangTillKap09Kommandotolk();
+   //ingangTillSkrivaFil();
+     ingangTillLasafil();
 
 }
 

@@ -215,6 +215,7 @@ void anropaForsokAndraVektornsVarden()
     forsokAndraVektornsVarden(a, vek);
     cout << "a=" << a << ", vek[]=" << vek[0] << "," << vek[1] << endl;
 }
+
 void ingangTillKap6ArrayFunktioner()
 {
     //provaArrayFunktionerna();

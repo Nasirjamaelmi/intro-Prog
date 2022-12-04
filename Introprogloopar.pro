@@ -21,6 +21,11 @@ SOURCES += \
         kap08CStrang.cpp \
         kap08String.cpp \
         kap08char.cpp \
+        kap09experimentMedCin.cpp \
+        kap09franUppmaning.cpp \
+        kap09kommandotolk.cpp \
+        kap10LasFranFil.cpp \
+        kap10skrivTillFil.cpp \
         main.cpp
 
 HEADERS += \

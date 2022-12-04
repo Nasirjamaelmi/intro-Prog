@@ -85,8 +85,8 @@ void konverteraTillRubrik(char str[])
 
 bool arVokal(char ch)
 {
-    ch = tolower(ch);
-    char str[]{'a','o','u','e','i','y'};
+
+    char str[]{'a','o','u','e','i','y','A','O','U','E','I','Y'};
 
     for(int i=0; str[i]!=0; i++)
     {
@@ -128,6 +128,7 @@ void automattestaArVokalOchArKonsonant(){
     assert( !arVokal(andraTecken[i]) && !arKonsonant(andraTecken[i]) );
     cout << "testerna av arVokal/arKonsonant lyckades!" << endl;
 }
+
 void automattestaKonverteraTillRubrik()
 {
     cout << "automattestar konverteraTillRubrik" << endl;
