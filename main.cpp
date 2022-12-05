@@ -58,8 +58,8 @@ int main()
     //ingangTillKap09ExperimentMedCin();
     //ingangTillKap09Uppmaningar();
     //ingangTillKap09Kommandotolk();
-   //ingangTillSkrivaFil();
-     ingangTillLasafil();
+    //ingangTillSkrivaFil();
+    ingangTillLasafil();
 
 }
 

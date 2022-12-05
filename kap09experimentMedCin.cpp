@@ -59,7 +59,7 @@ void ingangTillKap09ExperimentMedCin()
     cout << "ingangTillKap09ExperimentMedCin." << endl;
     //testCinString();
     //testaCinInt();
-    //testaCinIntMedFelHantering();
+   // testaCinIntMedFelHantering();
 
 }
 

@@ -4,8 +4,12 @@
 #include <fstream>
 #include <vector>
 #include <cmath>
+#include <math.h>
 
 using namespace std;
+
+
+#define M_PI 3.14159265358979323846
 
 void skapaFilenHejFilsystem()
 {
@@ -67,19 +71,6 @@ void skapaHexagon()
        ut <<"</svg>" <<endl;
 }
 
-bool matcharFragenyckel(string ord, string nyckel)
-{
-// TODO
-}
-void automattestaMatcharFragenyckel()
-{
-    cout << "testar matcharFragenyckel ..." << endl;
-    assert( matcharFragenyckel("xaby", "?ab?") );
-    assert( !matcharFragenyckel("xaby", "?abz") );
-    assert( !matcharFragenyckel("xaby", "?abyx") );
-    assert( !matcharFragenyckel("xabyx", "?aby") );
-    cout << "automattestaMatcharFragenyckel lyckades" << endl;
-}
 
 void ingangTillSkrivaFil()
 {
