@@ -47,6 +47,12 @@ void ingangTillSkrivaFil();
 
 void ingangTillLasafil();
 
+void ingangTillSlump();
+
+void ingangTillPekare();
+
+void ingangTillItereraMedPekare();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
@@ -59,7 +65,10 @@ int main()
     //ingangTillKap09Uppmaningar();
     //ingangTillKap09Kommandotolk();
     //ingangTillSkrivaFil();
-    ingangTillLasafil();
+    //ingangTillLasafil();
+     //ingangTillSlump();
+    ingangTillPekare();
+    //ingangTillItereraMedPekare();
 
 }
 

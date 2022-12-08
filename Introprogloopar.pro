@@ -26,6 +26,9 @@ SOURCES += \
         kap09kommandotolk.cpp \
         kap10LasFranFil.cpp \
         kap10skrivTillFil.cpp \
+        kap11FunkOchSpel.cpp \
+        kap12itereraMedPekare.cpp \
+        kap12pekare.cpp \
         main.cpp
 
 HEADERS += \

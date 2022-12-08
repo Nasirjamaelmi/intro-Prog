@@ -152,7 +152,7 @@ void testaFail()
     char tecken = 'x';
 
     ström >> tal1 >> tecken >> tal2 >> sträng;
-    ström << "hej";
+   // ström >> "hej";
 
     cout << tal1 <<endl;
     cout << tecken <<endl;

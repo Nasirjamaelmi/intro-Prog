@@ -8,13 +8,12 @@ using namespace chrono;
 
 bool innehaller(const vector<int> v, int tal)
 {
-    for(int i= 0; i < v.size(); i++)
+    for(unsigned int i= 0; i < v.size(); i++)
     {
         if (v[i] == tal)
         {
             return true;
         }
-
     }
     return false;
 }
@@ -70,22 +69,22 @@ void korTusenExperiment( const vector<int> anvandarensRad)
          }
      }
 
-        cout<<"Du fick rätt "<<antal<<" av 1000"<<endl;
+        cout<<"Du fick ratt "<<antal<<" av 1000"<<endl;
 
 }
 
-void lottoexperimentera( )
+void lottoexperimentera()
 {
     vector<int> anvandarrad = lottoradFranAnvandare();
     for (int i=0; i < 20 ; i+=1)
     {
-         korTusenExperiment( anvandarrad );
+         korTusenExperiment(anvandarrad);
     }
-
 }
 
 void ingangTillKap06Lottoexperiment()
 {
+
     lottoexperimentera();
 }
 
