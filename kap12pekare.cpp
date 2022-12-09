@@ -30,6 +30,7 @@ void bytVarden(double *pA, double *pB)
     *pA = *pB;
     *pB = a;
 }
+
 void automattestaBytVarden()
 {
     cout << "Testar bytVarden" << endl;
@@ -55,11 +56,128 @@ int x (const char *str)
 
     return pCh - str;
 }
+
+void skrivStrangar(const char ** strangar, int antal)
+{
+
+    for(int i=0; i<antal; i++)
+    {
+        cout<<strangar[i];
+    }
+
+}
+
+void provaSkrivStrangar()
+{
+    const int antal = 7;
+    const char *dagnamn[antal] = { "måndag", "tisdag", "onsdag", "torsdag",
+    "fredag", "lördag", "söndag" };
+    skrivStrangar(dagnamn, antal);
+}
+
+void skrivUtArr(const int *pBegin, const int *pEnd)
+{
+    for(const int *p = pBegin; p!=pEnd; p++)
+    {
+        cout<<*p<<" ";
+    }
+
+
+}
+void fyllMedVarde(int *pBegin, int *pEnd, int varde)
+{
+    for (int *p =pBegin; p!=pEnd; p++)
+    {
+          *p=varde;
+
+    }
+}
+void fyllMedSlumptal(int *pBegin, int *pEnd, int minst, int störst)
+{
+
+    for (int *p= pBegin; p!=pEnd; p++)
+    {
+        *p= (rand() % (störst + 1 - minst)) + minst;
+    }
+}
+int minst(const int *pBegin, const int *pEnd)
+{
+    assert( pEnd - pBegin > 0);
+
+    const int *findSmall = pBegin;
+    for(const int *p=pBegin; p!=pEnd; p++)
+    {
+
+       if(*p < *findSmall)
+       {
+           findSmall = p;
+       }
+
+
+    }
+    return *findSmall;
+}
+int storst(const int *pBegin, const int *pEnd)
+{
+    assert( pEnd - pBegin > 0);
+    const int *findBig = pBegin;
+    for(const int *p=pBegin; p!=pEnd; p++)
+    {
+       if(*p > *findBig)
+       {
+           findBig = p;
+       }
+
+    }
+    return *findBig;
+}
+bool arSorterad(const int *pBegin, const int *pEnd)
+{
+    for (const int *p=pBegin; p!=pEnd; p++)
+    {
+         if(*p > *(p+1))
+         {
+             return false;
+         }
+    }
+    return true;
+}
+bool innehaller(const int *pBegin, const int *pEnd, int x)
+{
+    for (const int *p=pBegin; p!=pEnd; p++)
+    {
+        if(*p == x)
+         return true;
+    }
+    return false;
+}
+void testaArrayfunktionernaP()
+{
+    cout << "testar arrayfunktionerna -P " << endl;
+    const int storlek = 10;
+    int arr[storlek];
+    fyllMedVarde(&arr[0], &arr[storlek], 5);
+    skrivUtArr(&arr[0], &arr[storlek]);
+    arr[0] -= 1;
+    arr[storlek-1] += 1;
+    assert( arSorterad(&arr[0], &arr[storlek]) );
+    arr[0] = 6;
+    assert( !arSorterad(&arr[0], &arr[storlek]) );
+    fyllMedSlumptal(&arr[0], &arr[storlek], -2, 2);
+    skrivUtArr(&arr[0], &arr[storlek]);
+    arr[1] = -3; // Detta blir det minsta värdet
+    arr[storlek-1] = 3; // Detta blir det största värdet
+    int m = minst(&arr[0], &arr[storlek]);
+    int s = storst(&arr[0], &arr[storlek]);
+    assert( m == -3 && s == 3 );
+    assert( innehaller(&arr[0], &arr[storlek], 3));
+    cout << "testar av arrayfunktionerna -P lyckades" << endl;
+}
 void ingangTillPekare()
 {
-    ovaPaPekarnotation();
+    //ovaPaPekarnotation();
     //automattestaBytVarden();
-
-
+    //provaSkrivStrangar();
+    testaArrayfunktionernaP();
 
 }
