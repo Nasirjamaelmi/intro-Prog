@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cassert>
+#include <iomanip>
 
 using namespace std;
 
@@ -24,6 +25,7 @@ void bytVarden(int *pA, int *pB)
     *pA = *pB;
     *pB = a;
 }
+
 void bytVarden(double *pA, double *pB)
 {
     double a = *pA;
@@ -45,10 +47,10 @@ void automattestaBytVarden()
     cout << "Testet av bytVarden lyckades!" << endl;
 }
 
-int x (const char *str)
+int Langd(const char *str)
 {
     const char *pCh = str;
-    while(*pCh != 0)
+    while(pCh != 0)
     {
         ++pCh;
 
@@ -70,8 +72,10 @@ void skrivStrangar(const char ** strangar, int antal)
 void provaSkrivStrangar()
 {
     const int antal = 7;
+
     const char *dagnamn[antal] = { "måndag", "tisdag", "onsdag", "torsdag",
     "fredag", "lördag", "söndag" };
+
     skrivStrangar(dagnamn, antal);
 }
 
@@ -84,6 +88,7 @@ void skrivUtArr(const int *pBegin, const int *pEnd)
 
 
 }
+
 void fyllMedVarde(int *pBegin, int *pEnd, int varde)
 {
     for (int *p =pBegin; p!=pEnd; p++)
@@ -92,6 +97,7 @@ void fyllMedVarde(int *pBegin, int *pEnd, int varde)
 
     }
 }
+
 void fyllMedSlumptal(int *pBegin, int *pEnd, int minst, int störst)
 {
 
@@ -100,6 +106,7 @@ void fyllMedSlumptal(int *pBegin, int *pEnd, int minst, int störst)
         *p= (rand() % (störst + 1 - minst)) + minst;
     }
 }
+
 int minst(const int *pBegin, const int *pEnd)
 {
     assert( pEnd - pBegin > 0);
@@ -117,6 +124,7 @@ int minst(const int *pBegin, const int *pEnd)
     }
     return *findSmall;
 }
+
 int storst(const int *pBegin, const int *pEnd)
 {
     assert( pEnd - pBegin > 0);
@@ -131,6 +139,7 @@ int storst(const int *pBegin, const int *pEnd)
     }
     return *findBig;
 }
+
 bool arSorterad(const int *pBegin, const int *pEnd)
 {
     for (const int *p=pBegin; p!=pEnd; p++)
@@ -142,6 +151,7 @@ bool arSorterad(const int *pBegin, const int *pEnd)
     }
     return true;
 }
+
 bool innehaller(const int *pBegin, const int *pEnd, int x)
 {
     for (const int *p=pBegin; p!=pEnd; p++)
@@ -151,6 +161,7 @@ bool innehaller(const int *pBegin, const int *pEnd, int x)
     }
     return false;
 }
+
 void testaArrayfunktionernaP()
 {
     cout << "testar arrayfunktionerna -P " << endl;
@@ -173,11 +184,50 @@ void testaArrayfunktionernaP()
     assert( innehaller(&arr[0], &arr[storlek], 3));
     cout << "testar av arrayfunktionerna -P lyckades" << endl;
 }
+
+char* cstrangkopia(const char *cstrang)
+{
+ //   cout<<cstrang;
+    int i =  0;
+    while(cstrang[i]!= 0)
+        i++;
+    cout << i << endl;
+    char *str = new char[i+1];
+    char *p2 = str;
+    for(const char *x=cstrang; x<=cstrang+i; x++)
+    {
+       *p2 = *x;
+        p2++;
+    }
+
+    return str;
+
+}
+
+char* cstrangFranUppmaning(const char* uppmaning)
+{
+    cout<<uppmaning;
+    char str[100];
+    cin >> setw(100) >> str;
+    return cstrangkopia(str);
+}
+
+void provaCstrangFranUppmaning()
+{
+    const char* farnamn = cstrangFranUppmaning("Ditt förnamn");
+    const char* efternamn = cstrangFranUppmaning("Ditt efternamn: ");
+
+    cout<< "Hej" << farnamn <<" "<<efternamn <<"!"<<endl;
+//    delete [] farnamn;
+    delete [] efternamn;
+}
+
 void ingangTillPekare()
 {
     //ovaPaPekarnotation();
     //automattestaBytVarden();
     //provaSkrivStrangar();
-    testaArrayfunktionernaP();
+    //testaArrayfunktionernaP();
+    provaCstrangFranUppmaning();
 
 }
