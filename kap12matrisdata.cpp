@@ -180,59 +180,15 @@ Vaxel vaxelFranBelopp(int belopp)
 int beloppFranVaxel(Vaxel vaxel)
 {
    int sum = 0;
-
-   while(vaxel.antal500>0)
-   {
-       int temp = vaxel.antal500;
-       sum += temp * 500;
-
-   }
-
-   while (vaxel.antal200>0)
-       {
-           int temp=vaxel.antal200;
-           sum += temp * 200;
-
-       }
-
-    while(vaxel.antal100>0)
-   {
-      int temp=vaxel.antal100;
-       sum += temp * 100;
-
-   }
-
-    while(vaxel.antal20>0)
-       {
-           int temp=vaxel.antal20;
-           sum += temp * 20;
-
-       }
-
-    while(vaxel.antal10>0)
-   {
-       int temp=vaxel.antal10;
-       sum += temp * 10;
-
-   }
-
-    while(vaxel.antal5>0)
-   {
-       int temp=vaxel.antal5;
-       sum += temp * 5;
-
-   }
-
-    while(vaxel.antal1>0)
-   {
-       int temp=vaxel.antal1;
-       sum += temp;
-
-   }
-
+   sum += vaxel.antal500 * 500;
+   sum += vaxel.antal200 * 200;
+   sum += vaxel.antal100 * 100;
+   sum += vaxel.antal20 * 20;
+   sum += vaxel.antal10 * 10;
+   sum += vaxel.antal5 * 5;
+   sum += vaxel.antal1;
 
    return sum;
-
 }
 // Skriver ut växeln på skärmen
 void skrivUtVaxel(Vaxel vaxel)
@@ -253,7 +209,7 @@ bool arLika(const Vaxel &v1, const Vaxel &v2)
 // Automattestar de funktioner som har med Växel att göra
 void automattestaVaxel()
 {
-    Vaxel vaxell = vaxelFranBelopp(10001);
+    Vaxel vaxell = vaxelFranBelopp(836);
     skrivUtVaxel(vaxell);
     assert(arLika(vaxelFranBelopp(947), vaxelFranAntal(1,2,0,2,0,1,2)) );
     assert(beloppFranVaxel(vaxell) == 836);

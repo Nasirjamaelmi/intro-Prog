@@ -55,6 +55,10 @@ void ingangTillItereraMedPekare();
 
 void ingangTillMatrisdata();
 
+void tentaova();
+
+void ova1();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
@@ -72,6 +76,8 @@ int main()
     //ingangTillPekare();
     //ingangTillItereraMedPekare();
     ingangTillMatrisdata();
+    //tentaova();
+    //ova1();
 
 }
 

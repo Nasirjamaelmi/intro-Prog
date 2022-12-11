@@ -30,9 +30,13 @@ SOURCES += \
         kap12itereraMedPekare.cpp \
         kap12matrisdata.cpp \
         kap12pekare.cpp \
-        main.cpp
+        komplex.cpp \
+        main.cpp \
+        tentaOva.cpp \
+        testaKomplex.cpp
 
 HEADERS += \
     Kap02FunkOchCppfiler.h \
     introprogloppar.h \
+    komplex.h \
     minamattefunktioner.h
