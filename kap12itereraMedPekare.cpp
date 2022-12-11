@@ -29,7 +29,7 @@ void konverteraTillRubrikP(char *str)
 {
     if(*str != 0)
     {
-     *(str) = toupper(*(str));
+        *(str) = toupper(*(str));
 
         for(int i=1; *(str+i)!= 0; i++)
         {

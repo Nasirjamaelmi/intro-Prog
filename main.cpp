@@ -53,6 +53,8 @@ void ingangTillPekare();
 
 void ingangTillItereraMedPekare();
 
+void ingangTillMatrisdata();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
@@ -67,8 +69,9 @@ int main()
     //ingangTillSkrivaFil();
     //ingangTillLasafil();
      //ingangTillSlump();
-    ingangTillPekare();
+    //ingangTillPekare();
     //ingangTillItereraMedPekare();
+    ingangTillMatrisdata();
 
 }
 

@@ -112,7 +112,27 @@ void nagraTestanrop()
     skrivCollatzStatistik(10000);
     cout << endl;
 }
-
+void hejTal( int x ){
+cout << "Hej heltal " << x << endl;
+}
+void hejTal( double x ){
+cout << "Hej på dig flyttal " << x << endl;
+}
+void hejTal( double x, double y ){
+cout << "Hej på er flyttal " << x << ", " << y << endl;
+}
+void hejTal( int x, int y, int z){
+cout << "Hej alla tre heltal " << x << ", " << y << "," << z << endl;
+}
+void testaHejTal(){
+hejTal(2);
+hejTal(2.1);
+hejTal(2, 3);
+hejTal(2.2, 3.1, 4.3);
+hejTal(2.0, 3.0, 4.0);
+double två = 2;
+hejTal(två, 3.0, 4.0);
+}
 void ingangTillKap05Collatz()
 {
     cout << "Ingang till Kap05 Collatz." << endl;

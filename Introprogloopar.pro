@@ -28,6 +28,7 @@ SOURCES += \
         kap10skrivTillFil.cpp \
         kap11FunkOchSpel.cpp \
         kap12itereraMedPekare.cpp \
+        kap12matrisdata.cpp \
         kap12pekare.cpp \
         main.cpp
 

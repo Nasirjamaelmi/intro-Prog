@@ -4,6 +4,8 @@
 
 using namespace std;
 
+
+
 void ovaPaPekarnotation()
 {
     cout << "Övar på pekarnotation" << endl;
@@ -218,7 +220,7 @@ void provaCstrangFranUppmaning()
     const char* efternamn = cstrangFranUppmaning("Ditt efternamn: ");
 
     cout<< "Hej" << farnamn <<" "<<efternamn <<"!"<<endl;
-//    delete [] farnamn;
+    delete [] farnamn;
     delete [] efternamn;
 }
 
