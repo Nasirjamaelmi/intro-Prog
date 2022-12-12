@@ -201,7 +201,7 @@ void skrivUtVaxel(Vaxel vaxel)
     cout<<"Antal 5:"<<vaxel.antal5<<endl;
     cout<<"Antal 1:"<<vaxel.antal1<<endl;
 }
-bool arLika(const Vaxel &v1, const Vaxel &v2)
+bool operator==(const Vaxel &v1, const Vaxel &v2)
 {
     return (beloppFranVaxel(v1) == beloppFranVaxel(v2));
 
@@ -211,7 +211,7 @@ void automattestaVaxel()
 {
     Vaxel vaxell = vaxelFranBelopp(836);
     skrivUtVaxel(vaxell);
-    assert(arLika(vaxelFranBelopp(947), vaxelFranAntal(1,2,0,2,0,1,2)) );
+    assert((vaxelFranBelopp(947) == vaxelFranAntal(1,2,0,2,0,1,2)) );
     assert(beloppFranVaxel(vaxell) == 836);
 
 }

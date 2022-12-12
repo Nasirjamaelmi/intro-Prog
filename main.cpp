@@ -59,6 +59,8 @@ void tentaova();
 
 void ova1();
 
+void ingangTillTestaKomplex();
+
 int main()
 {
     cout<< "Labbar från kompendiet!" <<endl;
@@ -75,9 +77,10 @@ int main()
      //ingangTillSlump();
     //ingangTillPekare();
     //ingangTillItereraMedPekare();
-    ingangTillMatrisdata();
+    //ingangTillMatrisdata();
     //tentaova();
     //ova1();
+    ingangTillTestaKomplex();
 
 }
 

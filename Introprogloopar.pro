@@ -27,6 +27,7 @@ SOURCES += \
         kap10LasFranFil.cpp \
         kap10skrivTillFil.cpp \
         kap11FunkOchSpel.cpp \
+        kap12SpelkortFunktioner.cpp \
         kap12itereraMedPekare.cpp \
         kap12matrisdata.cpp \
         kap12pekare.cpp \
@@ -37,6 +38,7 @@ SOURCES += \
 
 HEADERS += \
     Kap02FunkOchCppfiler.h \
+    chap12spelkort.h \
     introprogloppar.h \
     komplex.h \
     minamattefunktioner.h
